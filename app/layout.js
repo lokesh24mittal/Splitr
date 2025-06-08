@@ -18,14 +18,14 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/logos/logo-s.png" sizes="any" />
       </head>
       <body className={`${inter.className}`}>
-        <main className="min-h-screen">
           <ClerkProvider>
+        <main className="min-h-screen">
             <ConvexClientProvider>
               <Header />
             </ConvexClientProvider>
-          </ClerkProvider>
           {children}
         </main>
+          </ClerkProvider>
       </body>
     </html>
   );
